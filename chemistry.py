@@ -183,7 +183,7 @@ def main():
     sample_mass = input('Mass of chemical sample in grams?')
     # Call the make_periodic_table function and
     periodic_table = make_periodic_table()
-    # store the periodic table in a variable.
+    # store the periodic table in a variable...
 
     # Call the parse_formula function to convert the
     # chemical formula given by the user to a compound
