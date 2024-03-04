@@ -196,7 +196,7 @@ def main():
     compute_molar_mass()
     # Compute the number of moles in the sample.
 
-    # Print the molar mass.
+    # Print the molar mass....
 
     # Print the number of moles.
 
