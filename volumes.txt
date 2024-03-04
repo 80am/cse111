@@ -1,0 +1,12 @@
+2024-01-20 21:18:14.097403, 205, 60, 15, 39.92449041517439
+Date: 2024-01-20 21:20:13.644738, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
+Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
+Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
+Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
+Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
+This tire is from a Honda civic
+Date: 2024/20/1, Width: 205, Ratio: 23, Diameter: 43, Volume: 34.60
+Date: 2024/20/1, Width: 34, Ratio: 54, Diameter: 23, Volume: 1.18
+Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
+Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 18, Volume: 45.96
+This tire is from a Nissan Z
