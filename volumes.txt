@@ -10,3 +10,5 @@ Date: 2024/20/1, Width: 34, Ratio: 54, Diameter: 23, Volume: 1.18
 Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 15, Volume: 39.92
 Date: 2024/20/1, Width: 205, Ratio: 60, Diameter: 18, Volume: 45.96
 This tire is from a Nissan Z
+Date: 2024/28/3, Width: 5, Ratio: 5, Diameter: 5, Volume: 0.00
+This tire is from a 5 5

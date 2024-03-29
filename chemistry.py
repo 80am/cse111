@@ -1,5 +1,15 @@
+#While testing the file i ran into the issue of it not understanding a lower case letter. So I set it to upper case on line 199 so that all the letters 
+# that the table_dict could find the right symbol. 
+
 from formula import parse_formula
 
+# Indexes for inner lists in the periodic table
+NAME_INDEX = 0
+ATOMIC_MASS_INDEX = 1
+
+# Indexes for inner lists in a symbol_quantity_list
+SYMBOL_INDEX = 0
+QUANTITY_INDEX = 1
 # def compute_molar_mass():
 
 
@@ -103,14 +113,6 @@ def make_periodic_table():
     }
     return periodic_table_dict
 
-# Indexes for inner lists in the periodic table
-NAME_INDEX = 0
-ATOMIC_MASS_INDEX = 1
-
-# Indexes for inner lists in a symbol_quantity_list
-SYMBOL_INDEX = 0
-QUANTITY_INDEX = 1
-
 
 def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     """Compute and return the total molar mass of all the
@@ -140,28 +142,34 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
         # Add the product into the total molar mass.
     # atomic_symbol = 0
     # atomic_quantity = 1
-
+    total_molar_mass = 0
     #for periodic_key, periodic_list in make_periodic_table.itmes():
     #total_molar_mass = 
-    for index in symbol_quantity_list:
-        atomic_symbol = index[SYMBOL_INDEX]
-        atomic_quantity = index[QUANTITY_INDEX]
+    for index in range(len(symbol_quantity_list)):
+        part = symbol_quantity_list[index]
+        symbol = part[SYMBOL_INDEX]
+        quantity = float(part[QUANTITY_INDEX])
 
-        if atomic_symbol in periodic_table_dict:
-            value = periodic_table_dict[atomic_symbol]
-            atomic_mass = value[ATOMIC_MASS_INDEX]
+        element = periodic_table_dict[symbol]
+        atomic_mass = float(element[ATOMIC_MASS_INDEX])
+        molar_mass = atomic_mass * quantity
 
-            total_molar_mass += atomic_mass * atomic_quantity
-        else:
-            print("That atomic symbol does not exist")
+        total_molar_mass += molar_mass
 
-    
+        # atomic_symbol = index[SYMBOL_INDEX]
+        # atomic_quantity = index[QUANTITY_INDEX]
 
-    
+        # if atomic_symbol in periodic_table_dict:
+        #     value = periodic_table_dict[atomic_symbol]
+        #     atomic_mass = value[ATOMIC_MASS_INDEX]
 
+        #     total_molar_mass += atomic_mass * atomic_quantity
+        # else:
+            # print("That atomic symbol does not exist")
 
     # Return the total molar mass.
-    return
+    return total_molar_mass
+
 
 # def main():
 
@@ -180,25 +188,26 @@ def main():
     # Get a chemical formula for a molecule from the user.
     molecule_formula = input("What is the Chemical Formula you would like to use?")
     # Get the mass of a chemical sample in grams from the user.
-    sample_mass = input('Mass of chemical sample in grams?')
+    sample_mass = float(input('Mass of chemical sample in grams?'))
     # Call the make_periodic_table function and
-    periodic_table = make_periodic_table()
+    periodic_table_dict = make_periodic_table()
     # store the periodic table in a variable...
 
     # Call the parse_formula function to convert the
     # chemical formula given by the user to a compound
     # list that stores element symbols and the quantity
     # of atoms of each element in the molecule.
-    parse_formula(molecule_formula, periodic_table)
-
+    symbol_quantity_list = parse_formula(molecule_formula, periodic_table_dict)
+    print(symbol_quantity_list)
     # Call the compute_molar_mass function to compute the
     # molar mass of the molecule from the compound list.
-    compute_molar_mass()
+    total_molar_mass = compute_molar_mass(symbol_quantity_list, periodic_table_dict)
     # Compute the number of moles in the sample.
-
+    moles = sample_mass / total_molar_mass
     # Print the molar mass....
-
+    print(f"{total_molar_mass} grams/mole")
     # Print the number of moles.
+    print(f"{moles:.5f} moles")
 
 
 

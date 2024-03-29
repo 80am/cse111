@@ -1,0 +1,72 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+        S.T.F.U.B (Start To Finish Your Basement).
+
+2. What real-world problem will your program address or help to solve?
+        It will help anyone who is wanting to finish their basement. It will prepare them for materials and rough cost. 
+3. What will you learn from developing this program?
+        Im not sure what I will learn until Im into it but I will be using everything I have learned this sememster and being able to add in my hobby.
+4. What Python modules will your program use?
+        I think a csv file to write to, math, datetime, functions, tkinter, it will also print out the info sheet, possible web scraper to get prices for materials from lowes.
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+
+             I plan to separate functions like different math and writing to files 
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. Will you write test functions to test at least two of your program
+functions?
+
+             Yes I will write test programs 
+
+
+
+Lesson 11 Rubric
+Proposal—40%: Does your proposal adequately answer the questions in the template?
+
+Time—50%: Did you spend at least three hours on your proposal and program during the current lesson?
+
+Description—10%: Is the description of your work for this lesson complete and easily understandable? At the end of each lesson, 
+    you will submit a description of your work. This description should follow normal English rules of spelling and grammar. It must include the following:
+
+The amount of time that you spent working on your program during the current lesson.
+
+        I have spent 4 hours working and researching my project. I have watched many YouTube videos on how to use GUI's. I have looked at many websites on how to build my project. 
+
+A list of the documentation that you read, the videos that you watched, and the coding experiments that you tried.
+
+        https://youtu.be/yQSEXcf6s2I?si=GinvqvMjdwkmVLLX
+        https://docs.python.org/3/library/tkinter.html
+        https://realpython.com/python-gui-tkinter/
+        https://www.geeksforgeeks.org/python-gui-tkinter/
+
+
+
+A description or list of the work that you finished on your program.
+
+        I have started the program and havegot the math for the first part of a basement finished. WHen you need to know how much wood you will need for framing. I will write the txt file
+        in order to draw prices for materials from, next.
+
